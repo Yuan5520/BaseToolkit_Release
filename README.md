@@ -7,8 +7,8 @@
 | 仓库 | 是否需要 Base |
 |------|:------------:|
 | **CyberYuan-Base** | -- (本仓库) |
-| [RobotMatrix](https://github.com/Yuan5520/RobotMatrix) | 需要 |
-| [RealTimeDrive](https://github.com/Yuan5520/RealTImeDrive) | 需要 |
+| [RobotMatrix_Release](https://github.com/Yuan5520/RobotMatrix_Release) | 需要 |
+| [RealTimeDrive_Release](https://github.com/Yuan5520/RealTimeDrive_Release) | 需要 |
 
 **Base 是所有 CyberYuan 产品的必备依赖。** 请在导入其他产品仓库之前，先将本仓库导入到 Unity 项目中。
 
@@ -24,11 +24,8 @@
    - `Assets/Persistence/`
    - `Assets/Recorder/`
    - `Assets/DBManager/`
-   - `Assets/BaseLicense/`
-   - `Assets/Plugins/BaseLicense/`
    - `Assets/Plugins/MySQLPlugins/`
 3. Unity 将自动识别 Assembly Definition 并完成编译
-4. 首次使用需要激活许可证：菜单栏 `CyberYuan > Base License > Activate`
 
 ## 系统要求
 
@@ -123,18 +120,10 @@ MySQL 数据库连接池管理、异步操作与表结构校验。
 
 1. **模块化设计** -- 每个模块独立 Assembly Definition，按需引用，最小化编译依赖
 2. **零侵入集成** -- 通过 asmdef 引用机制集成，不修改现有项目结构
-3. **许可证保护** -- 基于 RSA-2048 + AES-256-CBC 加密的许可证系统，保护知识产权
-4. **生产级数据库** -- 内置连接池、异步操作、表结构校验，开箱即用
-5. **跨平台数学** -- 纯 C# 数学库，不依赖 UnityEngine，可用于 Editor 工具和 CI 测试
+3. **生产级数据库** -- 内置连接池、异步操作、表结构校验，开箱即用
+4. **跨平台数学** -- 纯 C# 数学库，不依赖 UnityEngine，可用于 Editor 工具和 CI 测试
 
 ---
-
-## 许可证激活
-
-1. 菜单栏选择 `CyberYuan > Base License > Activate`
-2. 在弹出窗口中输入邮箱并发送申请
-3. 收到许可证密钥后，输入密钥完成激活
-4. 可通过 `CyberYuan > Base License > Check Status` 查看许可证状态
 
 ## 技术支持
 
